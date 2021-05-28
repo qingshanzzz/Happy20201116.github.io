@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html文档</title>
+</head>
+
+<body>
+    <strong> 标题标签 head</strong>
+    <h1>HTML文档</h1>
+    <h2>二级标题</h2>
+    <h3>三级标题</h3>
+    <h4>四级标题</h4>
+    <h5>五级标题</h5>
+    <h6>六级标题</h6>
+
+    <strong> 段落标签p paragraph</strong>
+    <p>这是一个段落paragraph</p> <br />
+
+    <strong> 换行标签单标签 &lt;br /&gt; </strong>
+    <p>br从这里换<br />换行</p> <br />
+
+    <!-- 加粗标签 <strong></strong> 和 <b></b>  -->
+    <strong>strong我加粗啦</strong><br />
+    <b>bold我也加粗啦</b><br />
+
+    <!-- 倾斜标签 -->
+    <strong> 倾斜标签</strong>
+    <em>em脉动回来</em><br />
+    <i>i脉动回来incline</i><br />
+
+    <!-- 删除线 -->
+    <strong> 删除线</strong>
+    <del>del删除不要这句话delete</del><br />
+    <s>s标签删除删除stickout</s><br />
+
+    <!-- 下划线 -->
+    <strong> 下划线</strong>
+    <ins>ins</ins><br />
+    <u>u下划线underline</u><br />
+
+    <!-- div和span盒子就是个容器 -->
+    <strong> div和span盒子就是个容器</strong>
+    <p>
+    <div>div我是一个块元素，我自己就占一行division我宽高可调</div>
+    <span>span我是一个行内元素，</span><span>行内可以显示多个，宽高不能调</span></p>
+
+    <!-- 图像标签 -->
+    <strong> 图像标签</strong>
+
+    <!-- 属性：src   图片路径  为必须属性
+              alt   文本      替换文本，当图像不能显示的时候所显示的文字
+              title  文本      提示文本，鼠标放在图像上的时候，显示的文字
+              width   px        图像宽度
+              height  px        图像高度
+              boder   px        图像边框粗细
+              可加多个属性，属性间有空格隔开-->
+    <img src="img02.png" alt="alt你的图像走丢啦" title="title我是一张图片啊" width="300px">
+    <!-- 绝对路径和相对路径 -->
+
+
+    <strong>
+        <div>超链接标签</div>
+    </strong>
+    <div>-- href 为必须属性用于指定目标链接的url地址
+        target 用于指定链接的打开方式_self为当前窗口打开(默认值)_blank为在新标签页打开 </div>
+    <p>
+        <span>链接分类:1外部链接</span><br />
+        <a href="http://www.baidu.com" target="_blank">href百度target_blank在新窗口打开</a><br />
+        <span>链接分类:2内部链接</span><br />
+        <a href="test.html" target="_self">href test.html target_self在当前窗口打开</a><br />
+        <span>链接分类:3空链接</span><br />
+        <a href="#">href#空链接</a><br />
+        <span>链接分类:4下载链接</span><br />
+        <span>如果链接地址是一个文件或者压缩包,浏览器会直接下载这个文件</span><br />
+        <span>链接分类:5网页链接 网页中的各种元素 文本 图片 表格 音频 都可以加上超链接</span><br />
+        <a href="http://www.baidu.com"><img src="img01.jfif" title="点击这个图片,跳转到百度"></a><br />
+        <span>链接分类:6锚点链接 通过目标位置加id name属性和链接# name调用快速定位到某个位置</span><br />
+    <h3 id="a">我h3 id="a"你过来啊</h3>
+    <a href="#a">我"#a"要去h3</a>
+    </p>
+    <!-- 特殊字符 -->
+    <p>
+        &nb空&nbsp;格sp;
+        &lt;lt＜小于号
+        &gt;gt＞大于号
+        &amp;& amp
+        &times;× times
+        &plusmn;+_正负号plusmn
+        &divide;÷ divide
+        &sup2;平方sup2
+        &sup3;立方 sup3</p>
+
+    <!-- 表格标签 -->
+    <p>
+    <table cellpadding="1px" border="1" cellspacing="1px">
+        <thead>
+            <tr>
+                <td>th table head(表头标签)</td>
+                <td>tbody table body(表格中的主体部分)</td>
+                <td>th+tbody</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>tr table row(表格中的一行)</td>
+                <td>td table data cell(表格中的一个单元格)</td>
+                <td>tr>td</td>
+            </tr>
+            <!-- 表格属性 常通过css设置-->
+            <tr>
+                <td>align</td>
+                <td>left，center，right</td>
+                <td>表格对周围的对齐方式</td>
+            </tr>
+            <tr>
+                <td>boder</td>
+                <td>1或""</td>
+                <td>是否有边框 默认无边框</td>
+            </tr>
+            <tr>
+                <td>cellpadding</td>
+                <td>像素值</td>
+                <td>单元边沿与其内容间的空白，默认为1像素</td>
+            </tr>
+            <tr>
+                <td>cellspacing</td>
+                <td>像素值</td>
+                <td>单元格间空白，默认为2</td>
+            </tr>
+            <tr>
+                <td>width height</td>
+                <td>像素值</td>
+                <td>表格宽高</td>
+            </tr>
+        </tbody>
+    </table>
+    </p>
+    <!-- 合并单元格 
+    1.合并方式：跨行rowspan="合并个数"
+                跨列colspan="合并个数"
+    2.合并单元格三部曲：确定跨行还是跨列
+                        找到目标单元格，写上合并方式="合并个数"
+                        删除多余单元格-->
+    <p>
+    <table cellpadding="1px" border="1" cellspacing="1px">
+        <thead>
+            <tr>
+                <td colspan="2">合并单元格</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">1.合并方式：</td>
+                <td>跨行rowspan="合并个数"</td>
+            </tr>
+            <!-- 表格属性 常通过css设置-->
+            <tr>
+                <td>跨列colspan="合并个数"</td>
+            </tr>
+            <tr>
+                <td rowspan="3">2.合并单元格三部曲：</td>
+                <td>确定跨行还是跨列</td>
+            </tr>
+            <tr>
+                <td>找到目标单元格，写上合并方式="合并个数"</td>
+            </tr>
+            <tr>
+                <td>删除多余单元格</td>
+            </tr>
+        </tbody>
+    </table>
+    </p>
+
+    <p>
+        <!-- 列表标签 -->
+        <strong>
+            <div>列表标签</div>
+        </strong>
+    <div>无序列表ul>li</div>
+
+    <ul>
+        <li>ul是无序列表unordered list</li>
+        <li>小li是list item</li>
+        <li>香蕉</li>
+        <li>菠菜</li>
+
+    </ul>
+    <div>有序列表ol>li</div>
+    <ol>
+        <li>ol是无序列表ordered list</li>
+        <li>我最喜欢的水果</li>
+        <li>香蕉</li>
+        <li>苹果</li>
+    </ol>
+    <div>自定义列表dl>dt+dd</div>
+    <dl>
+        <dt>dl自定义列表definition lists，联系我们</dt>
+        <dd>dt是definition term定义项自定义列表组，<a href="#">官方微信</a></dd>
+        <dd>dd是definition description自定义列表描述，<a href="#">官方微博</a></dd>
+        <dd>一个dt对应多个dd</dd>
+    </dl>
+    </p>
+
+    <p>
+        <!-- 表单标签的属性值 -->
+        <strong>
+            <div>表单标签(收集用户信息) 表单域，表单控件，提示信息</div>
+        </strong>
+    </p>
+    <p>
+    <table cellpadding="1px" border="1" cellspacing="1px">
+        <thead>
+            <tr>
+                <td>属性</td>
+                <td>属性值</td>
+                <td>作用</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>action</td>
+                <td>url地址</td>
+                <td>用于指定接收并处理表单数据的服务器程序的url地址</td>
+            </tr>
+            <tr>
+                <td>method</td>
+                <td>get/post</td>
+                <td>用于设置表单数据提交方式</td>
+            </tr>
+            <tr>
+                <td>name</td>
+                <td>名称</td>
+                <td>指定表单名称，以区分同一页面中多个表单域</td>
+            </tr>
+        </tbody>
+    </table>
+    </p>
+    <p>
+        <strong>
+            <div>表单元素/控件：1.input输入表单元素2.select下拉表单元素3.textarea文本域元素</div>
+        </strong>
+    <table cellpadding="1px" border="1" cellspacing="1px">
+        <thead>
+            <tr>
+                <td colspan="3">1.input输入表单元素&lt;input type="属性值"/&gt;单标签 </td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>type属性值</td>
+                <td colspan="2">作用</td>
+            </tr>
+            <tr>
+                <td>button</td>
+                <td colspan="2">按钮，&lt;button&gt;&lt;button/&gt;多数情况可用JS启动脚本</td>
+            </tr>
+            <tr>
+                <td>checkbox</td>
+                <td colspan="2">定义复选框</td>
+            </tr>
+            <tr>
+                <td>file</td>
+                <td colspan="2">定义输入字段和"浏览"按钮，供文件上传</td>
+            </tr>
+            <tr>
+                <td>hidden</td>
+                <td colspan="2">定义隐藏的输入字段</td>
+            </tr>
+            <tr>
+                <td>image</td>
+                <td colspan="2">定义图像形式的提交按钮</td>
+            </tr>
+            <tr>
+                <td>password</td>
+                <td colspan="2">定义密码字段</td>
+            </tr>
+            <tr>
+                <td>ridio</td>
+                <td colspan="2">定义单选按钮</td>
+            </tr>
+            <tr>
+                <td>reset</td>
+                <td colspan="2">定义重置按钮</td>
+            </tr>
+            <tr>
+                <td>submit</td>
+                <td colspan="2">定义提交按钮</td>
+            </tr>
+            <tr>
+                <td>text</td>
+                <td colspan="2">定义单行输入字段(文本框)，用户可输入文本，默认宽度20字符</td>
+            </tr>
+            <tr>
+                <td colspan="3">其他属性</td>
+            </tr>
+            <tr>
+                <td>name</td>
+                <td>用户自定义 单选框和复选框必须有相同的name值</td>
+                <td>定义input元素控件名 name和value是每个表单元素都有的属性</td>
+
+            </tr>
+            <tr>
+                <td>value</td>
+                <td>用户自定义</td>
+                <td>规定input的元素值</td>
+            </tr>
+            <tr>
+                <td>checked</td>
+                <td>checked</td>
+                <td>规定此inp元素首次加载时默认应被选中</td>
+            </tr>
+            <tr>
+                <td>maxlength</td>
+                <td>正整数</td>
+                <td>规定输入字段中字符的最大长度</td>
+            </tr>
+        </tbody>
+    </table>
+    </p>
+    <p>
+        <!-- 表单标签 -->
+    <form action="#" method="GET" name="表单信息">
+        性别:<input type="radio" name="sex" id="sex01" />男<input type="radio" name="sex" id="sex02" />女
+        身高：<input type="text" />
+        常住地：<input type="text" />
+        婚姻状况：<input type="radio" name="marry" value="checked" />未婚<input type="radio" name="marry" />已婚
+        兴趣爱好：<input type="checkbox" name="hobby" />干饭<input type="checkbox" name="hobby" />睡觉
+    </form>
+    </p>
+    <strong>
+        <div>lable标签</div>
+    </strong>
+    <div>lable标签用于绑定一个表单元素，当点击label标签内文本时，光标自动转到对应表单控件上</div>
+    <div>lable中的for属性与控件中的id属性命名一致</div>
+    <label for="sex01">男</label>
+    <label for="sex02">女</label>
+    <strong>
+        <div>select下拉表单元素select>option</div>
+    </strong>
+    <div>1.select中至少包含一对option 2.option中定义select="selected"时默认被选中 </div>
+
+    <select name="" id="">
+        <option value="">省</option>
+        <option value="">河北省</option>
+        <option value="">河南省</option>
+        <option value="">吉林省</option>
+    </select>
+    <strong>
+        <div>textarea文本域元素 用户输入内容较多时，备注，意见等大文本框</div>
+    </strong>
+    <div>textarea 属性：rows="3" cols="20" 3行每行20个字符</div>
+    <textarea name="" id="" cols="20" rows="3"></textarea>
+
+
+
+</body>
+
+</html>
